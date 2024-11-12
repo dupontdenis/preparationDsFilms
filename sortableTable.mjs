@@ -30,7 +30,7 @@ export async function renderSortableTable(films) {
     </table>
   `;
 
-  document.body.insertAdjacentHTML("beforeend", tableHTML);
+  document.body.insertAdjacentHTML("afterbegin", tableHTML);
 
   const table = document.querySelector("table");
   const thead = table.querySelector("thead");
