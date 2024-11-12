@@ -5,5 +5,6 @@ export async function fetchFilms() {
     throw new Error(`HTTP error! status: ${response.status}`);
   }
   const films = await response.json();
+  console.log(films);
   return films;
 }
